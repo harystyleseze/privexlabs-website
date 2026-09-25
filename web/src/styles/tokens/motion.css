@@ -1,0 +1,13 @@
+:root{
+  /* motion communicates system behavior; engineered, never decorative */
+  /* duration-1: state change (hover, press) · duration-2: reveal (dropdown, tab) · duration-3: structural (modal, page) · ease-flow: data-flow/diagram motion */
+  --duration-1:120ms; /* @kind other */
+  --duration-2:200ms; /* @kind other */
+  --duration-3:320ms; /* @kind other */
+  --ease-standard:cubic-bezier(0.2,0,0,1); /* @kind other */
+  --ease-exit:cubic-bezier(0.4,0,1,1); /* @kind other */
+  --ease-flow:cubic-bezier(0.4,0,0.2,1); /* @kind other */
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:1ms!important;transition-duration:1ms!important}
+}

@@ -1,0 +1,26 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface-elevated);
+  padding: 28px clamp(20px, 4vw, 56px);
+}
+.inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+}
+.link {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+  padding: 8px 0;
+}

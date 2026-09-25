@@ -1,0 +1,7 @@
+.mark {
+  position: absolute;
+}
+.mark path {
+  stroke: var(--color-border-strong);
+  stroke-width: 1;
+}
