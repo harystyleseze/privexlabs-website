@@ -1,0 +1,28 @@
+# PrivexLabs: local development in Docker (Redwood/Vite dev server with hot reload).
+#
+# Usage: ./scripts/docker/dev.sh up
+#
+# The repository is bind-mounted for live editing. node_modules live in
+# anonymous volumes populated from the image, so host (macOS) binaries never
+# reach the Linux container; `dev.sh up` renews them on every start, so
+# dependency changes in yarn.lock are picked up.
+
+name: privexlabs-dev
+
+services:
+  web:
+    build:
+      context: .
+      target: dev
+    image: privexlabs-dev:local
+    ports:
+      - "${PRIVEXLABS_DEV_PORT:-8910}:8910"
+    environment:
+      # redwood.toml reads the dev server port from here; inside the container
+      # it is always 8910 (the host side is PRIVEXLABS_DEV_PORT above).
+      WEB_DEV_PORT: "8910"
+    volumes:
+      - .:/home/node/app
+      - /home/node/app/node_modules
+      - /home/node/app/web/node_modules
+      - /home/node/app/api/node_modules

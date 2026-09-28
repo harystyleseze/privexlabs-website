@@ -2,6 +2,9 @@
 
 Welcome to [RedwoodJS](https://redwoodjs.com)!
 
+> **Docker (dev, production, SecretVM)**: see [scripts/docker/README.md](scripts/docker/README.md).
+> `./scripts/docker/dev.sh up` runs the dev server in a Node 20 container, whatever Node the host has.
+
 > **Prerequisites**
 >
 > - Redwood requires [Node.js](https://nodejs.org/en/) (=20.x) and [Yarn](https://yarnpkg.com/)

@@ -8,10 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" />
-  <script>
-    // Same rule the site applies on mount (localStorage 'pxl-theme', default dark), run before first paint.
-    try { document.documentElement.setAttribute('data-theme', localStorage.getItem('pxl-theme') || 'dark') } catch (e) { document.documentElement.setAttribute('data-theme', 'dark') }
-  </script>
+  <script src="/theme-init.js"></script>
 </head>
 
 <body>
