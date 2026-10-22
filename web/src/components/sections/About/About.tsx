@@ -11,10 +11,10 @@ const About = () => (
         <div className={styles.head}>
           <div className={styles.headText}>
             <span className={`px-label ${styles.accent}`}>
-              11 / DIFFERENTIATION
+              11 / WHY PRIVEXLABS
             </span>
             <h2 data-reveal="0" className={styles.h2}>
-              PrivexLabs seeks to differentiate through five principles.
+              What working with us is like.
             </h2>
           </div>
         </div>
@@ -33,11 +33,13 @@ const About = () => (
       </div>
       <div className={styles.who}>
         <div className={styles.whoHead}>
-          <span className={`px-label ${styles.accent}`}>WHO WE WORK WITH</span>
+          <span className={`px-label ${styles.accent}`}>
+            YOU&apos;LL RECOGNISE YOURSELF IF
+          </span>
           <p className={styles.whoText}>
-            Organizations that have significant amounts of data, repetitive
-            workflows, specialized knowledge, or operational processes that can
-            benefit from intelligent automation.
+            You&apos;re a growing business whose tools, spreadsheets, and
+            routines were fine at half your current size, and now cost you time,
+            errors, and visibility every week.
           </p>
         </div>
         <div className={styles.sectors}>

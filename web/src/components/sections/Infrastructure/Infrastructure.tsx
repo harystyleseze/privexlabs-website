@@ -20,30 +20,29 @@ const Infrastructure = () => {
     <section
       id="infrastructure"
       data-theme="dark"
-      data-sec="06 / INFRASTRUCTURE"
+      data-sec="06 / OUTCOME"
       className={styles.section}
     >
       <div className={styles.inner}>
         <div className={styles.head}>
           <div className={styles.headText}>
             <span className={`px-label ${styles.accent}`}>
-              06 / AI INFRASTRUCTURE
+              06 / WHAT YOU END UP WITH
             </span>
             <h2 data-reveal="0" className={styles.h2}>
-              The infrastructure required to operate AI systems reliably.
+              A business that runs on systems, not on memory.
             </h2>
           </div>
           <p data-reveal="120" className={styles.lede}>
-            The long-term objective is to help organizations develop an AI
-            operating capability, rather than simply purchase individual AI
-            tools.
+            The long-term objective is an operation you can see, control, and
+            scale, rather than a pile of tools you pay for.
           </p>
         </div>
 
         <div className={styles.body}>
           <div className={styles.stack}>
             <div className={`px-label ${styles.stackHead}`}>
-              <span>REFERENCE ARCHITECTURE / PX-7</span>
+              <span>HOW THE PIECES FIT / PX-7</span>
               <span>HOVER A LAYER</span>
             </div>
             <div className={styles.grid}>
@@ -103,7 +102,7 @@ const Infrastructure = () => {
               data-active={layer === DEPLOY_INDEX}
             >
               <span className={styles.deployK}>X01</span>
-              <span className={styles.deployName}>Deployment automation</span>
+              <span className={styles.deployName}>Runs where you need it</span>
               <span className={styles.deployEnv}>
                 CLOUD · PRIVATE CLOUD · ON-PREMISE · LOCAL · HYBRID
               </span>

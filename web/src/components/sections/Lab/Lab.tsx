@@ -62,17 +62,17 @@ const Lab = () => {
       <div className={styles.inner}>
         <div className={styles.head}>
           <span className={`px-label ${styles.accent}`}>
-            09 / RESEARCH &amp; DEVELOPMENT
+            09 / WHAT WE&apos;RE EXPLORING
           </span>
           <h2 data-reveal="0" className={styles.h2}>
-            We&apos;re not just implementing today&apos;s AI.{' '}
+            We&apos;re not just fixing today&apos;s problems.{' '}
             <span className={styles.h2Serif}>
-              We&apos;re exploring what comes next.
+              We&apos;re preparing for the ones growth brings.
             </span>
           </h2>
           <p data-reveal="120" className={styles.intro}>
-            R&amp;D should ultimately connect to practical applications rather
-            than existing purely as experimentation.
+            Everything we explore has to connect to something a growing business
+            can use: cheaper, faster, more private, or easier to work with.
           </p>
         </div>
         <div className={styles.body}>

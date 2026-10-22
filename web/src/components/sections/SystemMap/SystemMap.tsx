@@ -31,9 +31,11 @@ const SystemMap = () => {
       <div className={styles.inner}>
         <div className={styles.head}>
           <div className={styles.headText}>
-            <span className={`px-label ${styles.accent}`}>08 / SYSTEM MAP</span>
+            <span className={`px-label ${styles.accent}`}>
+              08 / HOW IT FITS TOGETHER
+            </span>
             <h2 data-reveal="0" className={styles.h2}>
-              The PrivexLabs system
+              From your problem to a system that runs it.
             </h2>
           </div>
           <span className="px-label">SELECT A NODE — 09 NODES / 16 LINKS</span>
@@ -122,10 +124,9 @@ const SystemMap = () => {
 
         <div className={styles.positioning}>
           <div className={styles.positioningHead}>
-            <span className="px-label">POSITIONING / FULL STACK</span>
+            <span className="px-label">ONE TEAM / WHOLE PROBLEM</span>
             <span className={`px-label ${styles.secondary}`}>
-              SOFTWARE ENGINEERING + ARTIFICIAL INTELLIGENCE + DATA +
-              INFRASTRUCTURE
+              SOFTWARE + AUTOMATION + DATA + PRACTICAL AI + INFRASTRUCTURE
             </span>
           </div>
           <div className={styles.chain}>

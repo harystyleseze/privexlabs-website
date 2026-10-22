@@ -26,10 +26,10 @@ const Capabilities = () => {
         <div className={styles.head}>
           <div className={styles.headText}>
             <span className={`px-label ${styles.accent}`}>
-              04 / WHAT PRIVEXLABS DOES
+              04 / WHAT WE BUILD
             </span>
             <h2 data-reveal="0" className={styles.h2}>
-              PrivexLabs operates across several connected areas.
+              Six ways we take work off your plate.
             </h2>
           </div>
           <span className="px-label">

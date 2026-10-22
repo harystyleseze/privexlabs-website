@@ -59,7 +59,7 @@ const Hero = () => {
       <canvas ref={cv} aria-hidden="true" className={styles.canvas} />
       <div className={styles.top}>
         <span className={`px-label ${styles.accent}`}>
-          PRIVEXLABS / AI &amp; SOFTWARE TECHNOLOGY
+          PRIVEXLABS / SOFTWARE · AUTOMATION · PRACTICAL AI
         </span>
         <span className="px-label">
           SYSTEM MAP / 00 — <span ref={sig}>LISTENING</span>
@@ -67,35 +67,35 @@ const Hero = () => {
       </div>
       <h1 className={styles.h1}>
         <span ref={hl1} className={styles.line}>
-          Build.
+          Automate.
         </span>
         <span ref={hl2} className={`${styles.line} ${styles.line2}`}>
-          Deploy.
+          Connect.
         </span>
         <span ref={hl3} className={`${styles.line} ${styles.line3}`}>
-          Own <span className={styles.primary}>AI</span>
+          <span className={styles.primary}>Control.</span>
           <span className={styles.square} />
         </span>
       </h1>
       <div className={styles.bottom}>
         <div className={styles.lead}>
           <p className={styles.leadText}>
-            PrivexLabs builds the technology that enables businesses to own,
-            deploy, and use AI{' '}
-            <span className={styles.leadStrong}>on their terms.</span>
+            We help growing businesses replace manual work, disconnected tools,
+            and spreadsheets with systems they can understand,{' '}
+            <span className={styles.leadStrong}>control, and grow with.</span>
           </p>
           <div className={styles.actions}>
             <Button as="a" href="#contact" size="lg" data-cursor="OPEN">
-              Start a conversation
+              Tell us what&apos;s slowing you down
             </Button>
             <Button
               as="a"
-              href="#system"
+              href="#approach"
               size="lg"
               variant="secondary"
               data-cursor="EXPLORE"
             >
-              Explore the system
+              See how we work
             </Button>
           </div>
         </div>
@@ -104,7 +104,7 @@ const Hero = () => {
             X 0000 · Y 0000
           </span>
           <span className="px-label">
-            DATA → SIGNAL → INTELLIGENCE → SYSTEM → POSSIBILITY
+            MANUAL → MAPPED → AUTOMATED → CONNECTED → IN CONTROL
           </span>
           <span className={`px-label ${styles.accent}`}>SCROLL ↓</span>
         </div>

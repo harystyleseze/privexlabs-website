@@ -1,5 +1,5 @@
 import Wordmark from 'src/components/ui/Wordmark/Wordmark'
-import { NAV } from 'src/content/site'
+import { NAV, WHATSAPP } from 'src/content/site'
 
 import styles from './Footer.module.css'
 
@@ -13,9 +13,25 @@ const Footer = () => (
             {label}
           </a>
         ))}
+        <a
+          href={WHATSAPP.dm}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cursor="OPEN"
+          className={styles.link}
+        >
+          WHATSAPP
+        </a>
+        <a
+          href={`tel:${WHATSAPP.phoneE164}`}
+          data-cursor="CALL"
+          className={styles.link}
+        >
+          {WHATSAPP.phoneDisplay}
+        </a>
       </nav>
       <span className="px-label">
-        YOUR DATA. YOUR AI. YOUR INFRASTRUCTURE. — © 2026 PRIVEXLABS
+        LESS MANUAL WORK. MORE CONTROL. — © 2026 PRIVEXLABS
       </span>
     </div>
   </footer>

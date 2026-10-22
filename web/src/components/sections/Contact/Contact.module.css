@@ -35,9 +35,14 @@
   gap: 40px clamp(32px, 5vw, 80px);
   align-items: flex-start;
 }
-.blurb {
+.aside {
   flex: 1 1 300px;
   max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.blurb {
   font-family: var(--font-serif);
   font-size: clamp(20px, 1.8vw, 24px);
   line-height: 1.45;
@@ -77,6 +82,36 @@
   font-size: 14px;
   font-weight: 600;
 }
+.channels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.channel {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border-strong);
+  padding-bottom: 2px;
+  transition: border-color var(--duration-1) var(--ease-standard), color var(--duration-1) var(--ease-standard);
+}
+.channel:hover,
+.channel:focus-visible {
+  color: var(--color-brand-primary);
+  border-color: var(--color-brand-primary);
+  outline: none;
+}
+.error {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+.errorLink {
+  color: var(--color-brand-primary);
+}
+.input,
 .textarea {
   width: 100%;
   resize: vertical;
@@ -90,6 +125,10 @@
   border-radius: 2px;
   outline: none;
 }
+.input {
+  resize: none;
+}
+.input:focus,
 .textarea:focus {
   border-color: var(--color-brand-primary);
   outline: 2px solid var(--color-focus);
