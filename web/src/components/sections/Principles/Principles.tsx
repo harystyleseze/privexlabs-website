@@ -17,9 +17,7 @@ const Principles = () => {
       <div className={styles.inner}>
         <div className={styles.aside}>
           <span className={`px-label ${styles.accent}`}>10 / PRINCIPLES</span>
-          <p className={styles.intro}>
-            PrivexLabs is built around several principles.
-          </p>
+          <p className={styles.intro}>Six rules we hold ourselves to.</p>
           <span aria-hidden="true" className={styles.number}>
             {pad2(pr + 1)}
           </span>

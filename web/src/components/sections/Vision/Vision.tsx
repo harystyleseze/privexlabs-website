@@ -7,22 +7,24 @@ const Vision = () => (
   <section id="vision" data-sec="03 / VISION" className={styles.section}>
     <div className={styles.inner}>
       <div className={styles.top}>
-        <span className={`px-label ${styles.accent}`}>03 / VISION</span>
+        <span className={`px-label ${styles.accent}`}>
+          03 / WHAT WE&apos;RE HERE TO DO
+        </span>
         <h2 data-reveal="0" className={styles.h2}>
-          To build technology that makes businesses more{' '}
-          <span className={styles.primary}>intelligent</span>, capable, and
-          efficient.
+          Technology that gives you more{' '}
+          <span className={styles.primary}>control</span> over how your business
+          runs.
         </h2>
         <div className={styles.paras}>
           <p data-reveal="100" className={styles.para}>
-            PrivexLabs aims to become a leading technology company for
-            organizations that want to understand, adopt, build, and control
-            their own AI capabilities.
+            Our ambition is to help growing businesses move from fragmented,
+            manual operations to connected, intelligent, and increasingly
+            automated systems they understand and own.
           </p>
           <p data-reveal="200" className={styles.paraSerif}>
-            We envision a future where businesses are not merely consumers of AI
-            products, but are able to use their own data, infrastructure, and
-            workflows to create intelligent systems tailored to their needs.
+            Not AI for its own sake. Technology applied to the real problems
+            that slow a business down, chosen because it works, and measured by
+            whether it did.
           </p>
         </div>
       </div>
@@ -30,7 +32,7 @@ const Vision = () => (
         <div className={styles.missionHead}>
           <span className={`px-label ${styles.accent}`}>MISSION</span>
           <h3 className={styles.h3}>
-            To make advanced AI and software practical and accessible to
+            To make operational technology practical and accessible to growing
             businesses.
           </h3>
           <span className={`px-label ${styles.achieve}`}>

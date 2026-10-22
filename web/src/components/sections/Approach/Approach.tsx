@@ -46,9 +46,9 @@ const Approach = () => {
     >
       <div className={styles.sticky}>
         <div className={styles.head}>
-          <span className={`px-label ${styles.accent}`}>05 / OUR APPROACH</span>
+          <span className={`px-label ${styles.accent}`}>05 / HOW WE WORK</span>
           <span className="px-label">
-            PrivexLabs follows a problem-first approach.
+            We start with the problem, not the technology.
           </span>
         </div>
         <div className={styles.body}>
@@ -137,8 +137,8 @@ const Approach = () => {
                   MEASURE → LEARN → IMPROVE
                 </span>
                 <span className={styles.centerText}>
-                  The objective is not simply to deliver software. The objective
-                  is to create measurable outcomes.
+                  The objective is not to deliver software. It&apos;s to make
+                  the business measurably easier to run.
                 </span>
               </div>
             </div>

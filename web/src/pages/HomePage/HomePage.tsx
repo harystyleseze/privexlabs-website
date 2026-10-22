@@ -20,7 +20,10 @@ import { COMPANY_SENTENCE } from 'src/content/site'
 // Sections in the design's order (00 INDEX … 13 CONTACT, with the dark system-check band after 04).
 const HomePage = () => (
   <>
-    <Metadata title="PrivexLabs" description={COMPANY_SENTENCE} />
+    <Metadata
+      title="PrivexLabs — Software, automation, and practical AI for growing businesses"
+      description={COMPANY_SENTENCE}
+    />
     <Hero />
     <Overview />
     <Signal />

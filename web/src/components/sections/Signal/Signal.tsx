@@ -50,7 +50,7 @@ const Signal = () => {
         <canvas ref={cv} aria-hidden="true" className={styles.canvas} />
         <div className={styles.bar}>
           <span className={`px-label ${styles.accent}`}>
-            02 / FROM DATA TO BUSINESS VALUE
+            02 / FROM MANUAL TO IN CONTROL
           </span>
           <div className={styles.progress}>
             <div className={styles.ticks}>

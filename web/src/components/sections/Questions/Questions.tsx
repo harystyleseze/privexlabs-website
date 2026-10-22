@@ -30,10 +30,10 @@ const Questions = () => {
         </div>
         <div className={styles.main}>
           <span className={`px-label ${styles.accent}`}>
-            07 / CORE VALUE PROPOSITION
+            07 / WHAT WE HELP YOU ANSWER
           </span>
           <h2 className={styles.h2}>
-            PrivexLabs helps businesses answer five important questions.
+            Five questions growing businesses ask us.
           </h2>
           <div className={styles.list}>
             {QS.map(([t, tag], i) => (
@@ -54,8 +54,8 @@ const Questions = () => {
             ))}
           </div>
           <p className={styles.closing}>
-            PrivexLabs combines strategy, engineering, AI, infrastructure, and
-            education to answer these questions.
+            We bring software, automation, data, and practical AI together to
+            answer them, and we measure whether the answer worked.
           </p>
         </div>
       </div>

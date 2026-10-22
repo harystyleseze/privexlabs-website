@@ -20,7 +20,7 @@ const SystemCheck = () => {
             LOCAL · HYBRID
           </div>
           <div data-reveal="880">
-            &gt; objective ........... MEASURABLE OUTCOMES
+            &gt; objective ........... LESS MANUAL WORK · MORE CONTROL
           </div>
           <div data-reveal="1100" className={styles.primary}>
             &gt; SYSTEM / READY <span data-pulse="1" className={styles.caret} />

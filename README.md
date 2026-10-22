@@ -13,6 +13,8 @@ Welcome to [RedwoodJS](https://redwoodjs.com)!
 Start by installing dependencies:
 
 ```
+nvm use 20
+corepack enable
 yarn install
 ```
 

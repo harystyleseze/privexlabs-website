@@ -34,19 +34,20 @@ const Direction = () => {
     <section
       id="direction"
       ref={sec}
-      data-sec="12 / DIRECTION"
+      data-sec="12 / JOURNEY"
       className={styles.section}
     >
       <div className={styles.sticky}>
         <div className={styles.head}>
           <div className={styles.headText}>
             <span className={`px-label ${styles.accent}`}>
-              12 / STRATEGIC DIRECTION
+              12 / WHERE THIS GOES
             </span>
-            <h2 className={styles.h2}>The intended evolution.</h2>
+            <h2 className={styles.h2}>Where this takes your business.</h2>
             <p className={styles.intro}>
-              PrivexLabs begins broadly by discovering opportunities, and
-              becomes increasingly focused as it learns from customers.
+              The move from fragmented, manual operations to connected,
+              automated systems happens in stages. Most businesses are somewhere
+              on this line.
             </p>
           </div>
           <div className={styles.barTrack}>

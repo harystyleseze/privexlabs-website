@@ -41,9 +41,9 @@ const Overview = () => {
         <div className={styles.aside}>
           <span className={`px-label ${styles.accent}`}>01 / OVERVIEW</span>
           <p className={styles.intro}>
-            PrivexLabs is an AI and software technology company focused on
-            building practical, secure, and intelligent solutions for
-            businesses.
+            PrivexLabs is a technology company that helps growing businesses
+            operate more efficiently through custom software, workflow
+            automation, and practical AI.
           </p>
         </div>
         <div className={styles.main}>
@@ -61,15 +61,16 @@ const Overview = () => {
           </p>
           <div className={styles.columns}>
             <p data-reveal="0" className={styles.column}>
-              We help organizations identify valuable opportunities for AI,
-              build custom AI-powered systems, work with proprietary data,
-              deploy AI models within controlled environments, and integrate
-              intelligent systems into real-world business operations.
+              The symptoms are familiar: work that depends on one person,
+              numbers that live in five places, reports built by hand, errors
+              found too late, and no clear view of what happened today.
             </p>
             <p data-reveal="120" className={styles.column}>
-              Our work spans AI engineering, software development, private AI
-              infrastructure, model customization, AI deployment, automation,
-              and AI education/training.
+              We design, build, and implement the technology that fixes this:
+              automating repetitive tasks, connecting the tools you already use,
+              building the internal tools you&apos;re missing, making
+              information easy to find, and adding AI only where it measurably
+              helps.
             </p>
           </div>
         </div>
