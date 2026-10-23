@@ -1,9 +1,0 @@
-.root {
-  position: relative;
-  overflow-x: clip;
-  background: var(--color-surface);
-  color: var(--color-text-primary);
-  font-family: var(--font-sans);
-  min-height: 100vh;
-  transition: background 320ms, color 320ms;
-}

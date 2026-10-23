@@ -1,0 +1,98 @@
+/* PrivexLabs color system — "Mineral & Signal"
+   Deep viridian (mineral green-teal) as the owned brand hue; graphite-green foundation;
+   green-cast engineered paper neutrals; brass as a sparing signal accent. */
+:root {
+  /* primitives — viridian ramp */
+  --viridian-100: #ddede7;
+  --viridian-200: #afd6c9;
+  --viridian-300: #6db4a0;
+  --viridian-400: #2f8a72;
+  --viridian-500: #166553;
+  --viridian-600: #0e5a4a;
+  --viridian-700: #0b4a3d;
+  --viridian-800: #0a3b31;
+  --viridian-900: #0a2b25;
+  /* primitives — engineered neutrals (green-cast) */
+  --neutral-0: #fcfdfb;
+  --neutral-50: #f6f8f4;
+  --neutral-100: #eff2ec;
+  --neutral-200: #e3e8e1;
+  --neutral-300: #cbd4cc;
+  --neutral-400: #9eaaa3;
+  --neutral-500: #6e7b75;
+  --neutral-600: #45524c;
+  --neutral-700: #2a3530;
+  --neutral-800: #19221e;
+  --neutral-900: #0c110f;
+  /* primitives — brass signal */
+  --brass-300: #e4c87e;
+  --brass-500: #c0912f;
+  --brass-700: #8a6414;
+
+  /* semantic — brand */
+  --color-brand-primary: var(--viridian-600);
+  --color-brand-primary-hover: var(--viridian-700);
+  --color-brand-secondary: var(--neutral-700);
+  --color-brand-accent: var(--brass-500);
+  --color-brand-accent-ink: var(--brass-700);
+  --color-foundation: var(--neutral-900);
+
+  /* semantic — surfaces */
+  --color-surface: var(--neutral-100);
+  --color-surface-elevated: var(--neutral-0);
+  --color-surface-muted: var(--neutral-200);
+  --color-surface-inverse: var(--neutral-900);
+
+  /* semantic — text */
+  --color-text-primary: #141b18;
+  --color-text-secondary: var(--neutral-600);
+  --color-text-muted: var(--neutral-500);
+  --color-text-inverse: #e9ede8;
+  --color-text-on-brand: #f2f7f4;
+
+  /* semantic — lines */
+  --color-border: var(--neutral-300);
+  --color-border-strong: var(--neutral-400);
+  --color-divider: #dce2db;
+
+  /* semantic — functional */
+  --color-success: #23744f;
+  --color-success-surface: #e1efe6;
+  --color-warning: #9a6a12;
+  --color-warning-surface: #f4ebd6;
+  --color-danger: #a63a2b;
+  --color-danger-surface: #f4e2de;
+  --color-info: #2b647f;
+  --color-info-surface: #e0ebf0;
+
+  /* focus */
+  --color-focus: var(--viridian-500);
+}
+[data-theme='dark'] {
+  --color-brand-primary: #3fa98d;
+  --color-brand-primary-hover: #5cbfa5;
+  --color-brand-secondary: #a9b4ad;
+  --color-brand-accent: #d8a945;
+  --color-brand-accent-ink: #d8a945;
+  --color-foundation: #070b09;
+  --color-surface: #0c110f;
+  --color-surface-elevated: #141b17;
+  --color-surface-muted: #19221e;
+  --color-surface-inverse: var(--neutral-100);
+  --color-text-primary: #e9ede8;
+  --color-text-secondary: #a9b4ad;
+  --color-text-muted: #77837c;
+  --color-text-inverse: #141b18;
+  --color-border: #263029;
+  --color-border-strong: #3a463f;
+  --color-divider: #1c2621;
+  --color-success: #4cae81;
+  --color-success-surface: #12291d;
+  --color-warning: #d8a945;
+  --color-warning-surface: #2b2210;
+  --color-danger: #d3705f;
+  --color-danger-surface: #2e1713;
+  --color-info: #63a3c0;
+  --color-info-surface: #122430;
+  --color-focus: #3fa98d;
+}

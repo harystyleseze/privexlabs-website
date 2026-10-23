@@ -1,0 +1,101 @@
+.section {
+  position: relative;
+  height: 480vh;
+  border-top: 1px solid var(--color-divider);
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+}
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.bar {
+  position: absolute;
+  left: clamp(20px, 4vw, 56px);
+  right: clamp(20px, 4vw, 56px);
+  top: clamp(76px, 11vh, 110px);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.accent {
+  color: var(--color-brand-accent-ink);
+}
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.ticks {
+  display: flex;
+  gap: 4px;
+}
+.tick {
+  width: 18px;
+  height: 3px;
+  background: var(--color-border-strong);
+  display: block;
+  transition: background 320ms;
+}
+.tick[data-on='true'] {
+  background: var(--color-brand-primary);
+}
+.count {
+  color: var(--color-text-primary);
+  font-variant-numeric: tabular-nums;
+}
+.status {
+  color: var(--color-brand-primary);
+  min-width: 136px;
+}
+.copy {
+  position: absolute;
+  left: clamp(20px, 4vw, 56px);
+  top: 30%;
+  width: min(34vw, 440px);
+  display: grid;
+}
+.copy[data-mobile='true'] {
+  top: 58%;
+  width: calc(100% - 40px);
+}
+.copyText {
+  grid-area: 1 / 1;
+  font-size: clamp(18px, 1.7vw, 24px);
+  line-height: 1.45;
+  color: var(--color-text-secondary);
+  transition:
+    opacity 600ms cubic-bezier(0.2, 0, 0, 1),
+    transform 600ms cubic-bezier(0.2, 0, 0, 1);
+  text-wrap: pretty;
+}
+.words {
+  position: absolute;
+  left: clamp(16px, 3.6vw, 52px);
+  bottom: clamp(20px, 5vh, 48px);
+  font-size: clamp(50px, 9.6vw, 164px);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  height: 1.1em;
+  overflow: hidden;
+}
+.wordTrack {
+  transition: transform 900ms cubic-bezier(0.2, 0, 0, 1);
+}
+.word {
+  height: 1.1em;
+  white-space: nowrap;
+  color: var(--color-text-primary);
+}
+.word[data-last='true'] {
+  color: var(--color-brand-primary);
+}
