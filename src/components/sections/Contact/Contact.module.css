@@ -160,3 +160,34 @@
   font-size: 18px;
   font-weight: 600;
 }
+
+.consent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  background: var(--color-surface);
+}
+.consentLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.checkbox {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin: 2px 0 0;
+  accent-color: var(--color-brand-primary);
+  cursor: pointer;
+}
+.consentNote {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}

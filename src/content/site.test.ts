@@ -18,6 +18,7 @@ import {
   DIR,
   CHAIN,
   LANG,
+  LEGAL_LINKS,
 } from './site'
 
 // Counts are asserted against labels the design hardcodes in its markup
@@ -42,6 +43,7 @@ describe('site content', () => {
     expect(DIR).toHaveLength(6)
     expect(CHAIN).toHaveLength(8)
     expect(LANG).toHaveLength(12)
+    expect(LEGAL_LINKS).toHaveLength(4)
   })
 
   it('has consistent references', () => {
@@ -51,7 +53,11 @@ describe('site content', () => {
       expect(ids.has(b)).toBe(true)
     })
     EXPS.forEach(([, , mode]) => expect(MODE_L[mode]).toBeDefined())
-    MENU.forEach(([, , href]) => expect(href.startsWith('#')).toBe(true))
+    MENU.forEach(([, , href]) => expect(href.startsWith('/#')).toBe(true))
+    NAV.forEach(([, href]) => expect(href.startsWith('/#')).toBe(true))
+    LEGAL_LINKS.forEach(([, href]) =>
+      expect(href.startsWith('/legal/')).toBe(true)
+    )
     LAYERS.slice(0, 7).forEach((l) => expect(l.k.startsWith('L')).toBe(true))
     LAYERS.slice(7, 10).forEach((l) => expect(l.k.startsWith('R')).toBe(true))
     expect(LAYERS[10].k).toBe('X01')

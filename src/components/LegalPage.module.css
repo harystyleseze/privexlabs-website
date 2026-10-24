@@ -1,0 +1,121 @@
+.main {
+  padding: calc(56px + clamp(56px, 8vw, 120px)) clamp(20px, 4vw, 56px)
+    clamp(88px, 11vw, 160px);
+}
+.inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px clamp(32px, 6vw, 96px);
+}
+.aside {
+  flex: 1 1 240px;
+  max-width: 320px;
+  position: sticky;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.accent {
+  color: var(--color-brand-accent-ink);
+}
+.others {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--color-divider);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.otherLink {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+.article {
+  flex: 3 1 480px;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.h1 {
+  font-size: clamp(32px, 4.4vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  text-wrap: balance;
+}
+.intro {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 1.6vw, 22px);
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--color-divider);
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: var(--text-h3-size);
+  line-height: var(--text-h3-line);
+  letter-spacing: var(--text-h3-tracking);
+  font-weight: 600;
+  padding-top: 8px;
+}
+.num {
+  color: var(--color-brand-primary);
+}
+.p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+.dot {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  background: var(--color-brand-primary);
+  transform: translateY(-2px);
+}
+.foot {
+  margin-top: 12px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-divider);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 17px;
+  font-weight: 600;
+}
+@media (max-width: 759px) {
+  .aside {
+    position: static;
+    max-width: none;
+  }
+}

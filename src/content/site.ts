@@ -5,28 +5,37 @@
 
 export type NavLink = readonly [label: string, href: string]
 export const NAV: readonly NavLink[] = [
-  ['PROBLEMS', '#signal'],
-  ['WHAT WE BUILD', '#capabilities'],
-  ['HOW WE WORK', '#approach'],
-  ['ABOUT', '#about'],
-  ['CONTACT', '#contact'],
+  ['PROBLEMS', '/#signal'],
+  ['WHAT WE BUILD', '/#capabilities'],
+  ['HOW WE WORK', '/#approach'],
+  ['ABOUT', '/#about'],
+  ['CONTACT', '/#contact'],
 ]
 
 export type MenuItem = readonly [k: string, label: string, href: string]
 export const MENU: readonly MenuItem[] = [
-  ['01', 'Overview', '#overview'],
-  ['02', 'Where things break', '#signal'],
-  ['03', "What we're here to do", '#vision'],
-  ['04', 'What we build', '#capabilities'],
-  ['05', 'How we work', '#approach'],
-  ['06', 'What you end up with', '#infrastructure'],
-  ['07', 'Five questions', '#questions'],
-  ['08', 'How it fits together', '#system'],
-  ['09', "What we're exploring", '#lab'],
-  ['10', 'Principles', '#principles'],
-  ['11', 'Why PrivexLabs', '#about'],
-  ['12', 'Where this goes', '#direction'],
-  ['13', 'Contact', '#contact'],
+  ['01', 'Overview', '/#overview'],
+  ['02', 'Where things break', '/#signal'],
+  ['03', "What we're here to do", '/#vision'],
+  ['04', 'What we build', '/#capabilities'],
+  ['05', 'How we work', '/#approach'],
+  ['06', 'What you end up with', '/#infrastructure'],
+  ['07', 'Five questions', '/#questions'],
+  ['08', 'How it fits together', '/#system'],
+  ['09', "What we're exploring", '/#lab'],
+  ['10', 'Principles', '/#principles'],
+  ['11', 'Why PrivexLabs', '/#about'],
+  ['12', 'Where this goes', '/#direction'],
+  ['13', 'Contact', '/#contact'],
+]
+
+/** Footer links to the legal documents (routes under src/app/legal). */
+export type LegalLink = readonly [label: string, href: string]
+export const LEGAL_LINKS: readonly LegalLink[] = [
+  ['Privacy Policy', '/legal/privacy'],
+  ['Terms of Use', '/legal/terms'],
+  ['Data Processing Agreement', '/legal/dpa'],
+  ['Disclaimer', '/legal/disclaimer'],
 ]
 
 export const COMPANY_SENTENCE =

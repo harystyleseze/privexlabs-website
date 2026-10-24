@@ -80,6 +80,10 @@ describe('HomePage', () => {
       screen.getByLabelText("What's slowing your business down?"),
       { target: { value: 'Orders live in a spreadsheet.' } }
     )
+    expect(
+      screen.getByRole('button', { name: 'Start a conversation' })
+    ).toBeDisabled()
+    fireEvent.click(screen.getByLabelText(/I agree to the Privacy Policy/))
     fireEvent.click(
       screen.getByRole('button', { name: 'Start a conversation' })
     )
@@ -109,6 +113,10 @@ describe('HomePage', () => {
       screen.getByLabelText("What's slowing your business down?"),
       { target: { value: 'Help' } }
     )
+    expect(
+      screen.getByRole('button', { name: 'Start a conversation' })
+    ).toBeDisabled()
+    fireEvent.click(screen.getByLabelText(/I agree to the Privacy Policy/))
     fireEvent.click(
       screen.getByRole('button', { name: 'Start a conversation' })
     )

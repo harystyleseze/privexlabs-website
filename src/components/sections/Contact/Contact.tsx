@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from 'react'
 
 import Button from '@/components/ui/Button/Button'
+import { LEGAL_EMAIL } from '@/content/legal'
 import { COMPANY_SENTENCE, WHATSAPP } from '@/content/site'
 import { useSite } from '@/layouts/SiteLayout/SiteContext'
 import { CONTACT_FORM_VIEW_URL, submitContactForm } from '@/lib/contactForm'
@@ -24,6 +25,7 @@ const Contact = () => {
   const { signal } = useSite()
   const [email, setEmail] = useState('')
   const [msg, setMsg] = useState('')
+  const [agreed, setAgreed] = useState(false)
   const [status, setStatus] = useState<Status>('ready')
 
   const send = async (e: FormEvent<HTMLFormElement>) => {
@@ -141,13 +143,42 @@ const Contact = () => {
                     , or message us on WhatsApp.
                   </p>
                 )}
+                <div className={styles.consent}>
+                  <label className={styles.consentLabel}>
+                    <input
+                      type="checkbox"
+                      name="agree"
+                      required
+                      checked={agreed}
+                      onChange={(e) => setAgreed(e.target.checked)}
+                      className={styles.checkbox}
+                    />
+                    <span>
+                      I agree to the{' '}
+                      <a
+                        href="/legal/privacy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Privacy Policy
+                      </a>
+                    </span>
+                  </label>
+                  <p className={styles.consentNote}>
+                    We use what you send only to get back to you. We never share
+                    it with third parties, and we delete it once our
+                    conversation is over. Email{' '}
+                    <a href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a> at any
+                    time to have it deleted.
+                  </p>
+                </div>
                 <div className={styles.actions}>
                   <span className="px-label">PROBLEM → PLAN → SYSTEM</span>
                   <Button
                     type="submit"
                     size="lg"
                     data-cursor="SEND"
-                    disabled={status === 'sending'}
+                    disabled={!agreed || status === 'sending'}
                   >
                     Start a conversation
                   </Button>
